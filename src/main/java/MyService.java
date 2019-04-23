@@ -1,6 +1,6 @@
 public class MyService implements IService {
 
-    @ExcuteTime
+    @ExcuteTime(printExcuteTime = false)
     public void openConnection() throws InterruptedException {
 
         System.out.println("Open connection ...");
@@ -42,7 +42,7 @@ public class MyService implements IService {
 
     }
 
-    @ExcuteTime
+    @ExcuteTime(printExcuteTime = false)
     public void closeConnection() throws InterruptedException {
 
         System.out.println("Close connection ....");
